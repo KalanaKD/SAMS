@@ -1,0 +1,138 @@
+/* Global styles */
+
+/* Typography */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #fff; /* Set text color to white */
+}
+
+/* Layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e; /* Set background color to dark */
+}
+
+header {
+  background-color: #232323; /* Adjust header background color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  background-color: #2c2c2c; /* Adjust nav background color */
+  padding: 10px;
+  text-align: center;
+}
+
+nav form {
+  display: inline-block;
+
+}
+
+nav form select {
+  background-color: #0f0f0f; /* Adjust nav select background color */
+  color: #fff; /* Set text color to white */
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+nav form select:hover {
+  background-color: #3a3a3a; /* Darken on hover */
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Table styles */
+#attendance-table {
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Adjust box shadow */
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+
+#attendance-table thead th {
+  background-color: #333; /* Adjust table header background color */
+  color: #fff;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+#attendance-table tbody td {
+  padding: 0.5rem;
+  border: 1px solid #444; /* Adjust border color */
+  border-bottom: 1px solid #333; /* Adjust border color */
+}
+
+#attendance-table tbody tr:nth-child(even) {
+  background-color: #2c2c2c; /* Adjust even row background color */
+}
+
+#attendance-table tbody tr:hover {
+  background-color: #444; /* Darken on hover */
+}
+
+#attendance-table input[type="submit"] {
+  background-color: #3ca1e9; /* Adjust button background color */
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#attendance-table input[type="submit"]:hover {
+  background-color: #52b5f2; /* Lighten on hover */
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  #attendance-table {
+    width: 100%;
+  }
+}
+
+/* Hover effects */
+#attendance-table th:hover {
+  background-color: #444; /* Darken on hover */
+}
+
+#attendance-table th,
+#attendance-table td {
+  transition: background-color 0.3s ease;
+}
+
+/* Dark Telegram theme */
+:root {
+  --telegram-main-color: #3ca1e9; /* Telegram blue */
+  --telegram-dark-color: #232323; /* Telegram dark gray */
+  --telegram-light-color: #2c2c2c; /* Telegram light gray */
+  --header-background-color: var(--telegram-dark-color);
+  --nav-background-color: var(--telegram-dark-color);
+  --nav-select-background-color: var(--telegram-main-color);
+  --table-header-background-color: var(--telegram-main-color);
+  --button-background-color: var(--telegram-main-color);
+}
+
+.toggle-theme {
+  background-color: var(--button-background-color);
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
